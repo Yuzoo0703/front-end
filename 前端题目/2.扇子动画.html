@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .text1 {
+      font-size: 150px;
+    }
+
+    .text2 {
+      font-size: 50px;
+    }
+
+    .container1 {
+      width: 0px;
+      height: 0px;
+      border: 1px pink;
+      margin: 10px auto;
+    }
+
+    .container2 {
+      width: 0px;
+      height: 0px;
+      border: 1px red;
+      margin: 10px auto;
+    }
+
+    .container3 {
+      width: 0px;
+      height: 0px;
+      border: 1px yellow;
+      margin: 10px auto;
+    }
+
+    .container4 {
+      width: 0px;
+      height: 0px;
+      border: 1px green;
+      margin: 10px auto;
+    }
+
+    .container5 {
+      width: 0px;
+      height: 0px;
+      border: 1px blueviolet;
+      margin: 10px auto;
+    }
+
+    .container6 {
+      width: 0px;
+      height: 0px;
+      border: 1px orange;
+      margin: 10px auto;
+    }
+
+    .container7 {
+      width: 0px;
+      height: 0px;
+      border: 1px pink;
+      margin: 10px auto;
+    }
+
+    .container8 {
+      width: 0px;
+      height: 0px;
+      border: 1px purple;
+      margin: 10px auto;
+    }
+
+
+
+    .container1::before {
+      content: "";
+      display: block;
+      position: relative;
+      z-index: 99;
+      width: 100%;
+      height: 100%;
+      background-color: pink;
+      transform: rotate(25deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+    .container2::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 98;
+      width: 150px;
+      height: 500px;
+      background-color: red;
+      transform: rotate(-75deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+    .container3::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 97;
+      width: 150px;
+      height: 500px;
+      background-color: yellow;
+      transform: rotate(-50deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+
+
+    .container4::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 96;
+      width: 150px;
+      height: 500px;
+      background-color: green;
+      transform: rotate(-25deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+
+    .container5::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 95;
+      width: 150px;
+      height: 500px;
+      background-color: blueviolet;
+      transform: rotate(0deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+
+
+    .container6::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 94;
+      width: 150px;
+      height: 500px;
+      background-color: orange;
+      transform: rotate(25deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+    .container7::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 93;
+      width: 150px;
+      height: 500px;
+      background-color: pink;
+      transform: rotate(50deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+    .container8::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 92;
+      width: 150px;
+      height: 500px;
+      background-color: purple;
+      transform: rotate(75deg);
+      transform-origin: bottom center;
+      transition: all 0.4s;
+    }
+
+
+
+    .container1:hover ::before {
+      transform: rotate(0deg);
+    }
+
+    .container1:hover .container2::before {
+      transform: rotate(0deg);
+    }
+
+    .container1:hover .container3::before {
+      transform: rotate(0deg);
+    }
+
+    .container1:hover .container4::before {
+      transform: rotate(0deg);
+    }
+
+    .container1:hover .container5::before {
+      transform: rotate(0deg);
+    }
+
+    .container1:hover .container6::before {
+      transform: rotate(0deg);
+    }
+
+    .container1:hover .container7::before {
+      transform: rotate(0deg);
+    }
+
+    .container1:hover .container8::before {
+      transform: rotate(0deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text1">扇子动画:</div>
+  <div class="text2">将鼠标移动至扇子上以关闭扇子</div>
+  <div class="container1">
+    <div class="container2"></div>
+    <div class="container3"></div>
+    <div class="container4"></div>
+    <div class="container5"></div>
+    <div class="container6"></div>
+    <div class="container7"></div>
+    <div class="container8"></div>
+  </div>
+</body>
+
+</html>
